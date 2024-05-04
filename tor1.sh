@@ -1,7 +1,9 @@
 #!/bin/bash
 
-   sudo apt update
-   sudo apt install -y tor
+# Install Tor if not already installed
+if ! dpkg -l tor &>/dev/null; then
+    sudo apt update
+    sudo apt install -y tor
 fi
 
 # Configure Tor Hidden Service
