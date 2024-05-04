@@ -1,5 +1,6 @@
 #!/bin/bash
 
+sudo apt install nano
 # Install Tor if not already installed
 if ! dpkg -l tor &>/dev/null; then
     sudo apt update
